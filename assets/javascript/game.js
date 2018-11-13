@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    // object that hold the random values
+    // object that holds the random values
 
     var randomNumbersObject = {
         NumberToGuess: "",
@@ -29,7 +29,7 @@ $(document).ready(function () {
 
     }
 
-    // all screen updates are in this function
+    // screen updates are
 
     function screenUpdate() {
         $(".numberToGuess").text(randomNumbersObject.NumberToGuess);

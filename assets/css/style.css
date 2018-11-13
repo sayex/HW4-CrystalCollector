@@ -1,9 +1,27 @@
 body {
-    background-color: brown
+    background-color: brown;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+p {
+    word-wrap: break-word;
 }
 
 .wrapper {
     margin: 5px;
+    width: 1000px;
+}
+
+header {
+    background-color: orange;
+    height: 60px;
+    width: 30%;
+    margin-bottom: 10px;
 }
 
 .gemsWrapper {
@@ -14,35 +32,17 @@ body {
     background-color: green
 }
 
-#gem1 {
-    height: auto;
-    width: 100px;
-    margin: 20px;
+.gems {
+    cursor: pointer;
 }
 
-#gem2 {
-    height: auto;
-    width: 100px;
-    margin: 20px;
-}
-
-#gem3 {
-    height: auto;
-    width: 100px;
-    margin: 20px;
-}
-
+#gem1,
+#gem2,
+#gem3,
 #gem4 {
     height: auto;
     width: 100px;
     margin: 20px;
-}
-
-header {
-    background-color: orange;
-    height: 60px;
-    width: 30%;
-    margin-bottom: 10px;
 }
 
 .instructions {
@@ -54,35 +54,55 @@ header {
 }
 
 .numberToGuess {
+    float: left;
     background-color: lightgreen;
+    width: 200px;
     height: 100px;
-
+    margin-right: 10px;
+    font-size: 40px;
 }
 
 .winLoss {
+    float: left;
     background-color: lightblue;
     height: 100px;
+    width: 100px;
+}
+
+.statsWrapper {
+    clear: both;
+    width: auto;
+    height: 100px;
+
 }
 
 #scoreText {
+    clear: both;
     background-color: teal;
     margin-bottom: 10px;
-
+    font-size: 20px;
 }
 
 .score {
-    width: 150px;
+    width: 200px;
+    color: white
 }
 
 #score {
     background-color: teal;
     height: 100px;
+    font-size: 40px;
 }
 
-.statsWrapper {
-    width: 200px;
-}
+
 
 #winLossStatus {
     min-height: 30px;
+    font-size: 20px;
+    background-color: azure;
+    margin-bottom: 10px;
+}
+
+.wins {
+    margin-bottom: 15px;
 }
