@@ -42,12 +42,12 @@ $(document).ready(function () {
 
     function checkWinLoss() {
         if (winLossObject.score === randomNumbersObject.NumberToGuess) {
-            alert("Winner");
             winLossObject.wins++
+            $("#winLossStatus").text("You got it!")
             reset()
         } else if (winLossObject.score > randomNumbersObject.NumberToGuess) {
-            alert("Loser");
             winLossObject.losses++
+            $("#winLossStatus").text("Try again!")
             reset()
 
         }
@@ -64,6 +64,7 @@ $(document).ready(function () {
     // play game with on click function
 
     $(".gems").on("click", function () {
+        $("#winLossStatus").text("")
         if ($(this).hasClass("gem1")) {
             winLossObject.score = winLossObject.score + randomNumbersObject.gem1
         } else if ($(this).hasClass("gem2")) {
