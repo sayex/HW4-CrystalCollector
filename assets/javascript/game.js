@@ -29,7 +29,7 @@ $(document).ready(function () {
 
     }
 
-    // screen updates are
+    // screen updates
 
     function screenUpdate() {
         $(".numberToGuess").text(randomNumbersObject.NumberToGuess);
