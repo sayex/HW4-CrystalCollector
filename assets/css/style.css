@@ -7,33 +7,34 @@ body {
 }
 
 .gemsWrapper {
-    width: 780px;
+    width: 600px;
     height: auto;
-    margin: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     background-color: green
 }
 
 #gem1 {
     height: auto;
-    width: 150px;
+    width: 100px;
     margin: 20px;
 }
 
 #gem2 {
     height: auto;
-    width: 150px;
+    width: 100px;
     margin: 20px;
 }
 
 #gem3 {
     height: auto;
-    width: 150px;
+    width: 100px;
     margin: 20px;
 }
 
 #gem4 {
     height: auto;
-    width: 150px;
+    width: 100px;
     margin: 20px;
 }
 
@@ -54,10 +55,13 @@ header {
 
 .numberToGuess {
     background-color: lightgreen;
+    height: 100px;
+
 }
 
 .winLoss {
     background-color: lightblue;
+    height: 100px;
 }
 
 #scoreText {
@@ -66,6 +70,19 @@ header {
 
 }
 
+.score {
+    width: 150px;
+}
+
 #score {
     background-color: teal;
+    height: 100px;
+}
+
+.statsWrapper {
+    width: 200px;
+}
+
+#winLossStatus {
+    min-height: 30px;
 }
