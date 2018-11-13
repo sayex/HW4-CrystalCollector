@@ -1,0 +1,71 @@
+body {
+    background-color: brown
+}
+
+.wrapper {
+    margin: 5px;
+}
+
+.gemsWrapper {
+    width: 780px;
+    height: auto;
+    margin: 20px;
+    background-color: green
+}
+
+#gem1 {
+    height: auto;
+    width: 150px;
+    margin: 20px;
+}
+
+#gem2 {
+    height: auto;
+    width: 150px;
+    margin: 20px;
+}
+
+#gem3 {
+    height: auto;
+    width: 150px;
+    margin: 20px;
+}
+
+#gem4 {
+    height: auto;
+    width: 150px;
+    margin: 20px;
+}
+
+header {
+    background-color: orange;
+    height: 60px;
+    width: 30%;
+    margin-bottom: 10px;
+}
+
+.instructions {
+    height: 300px;
+    width: 50%;
+    background-color: peachpuff;
+    margin-bottom: 10px;
+
+}
+
+.numberToGuess {
+    background-color: lightgreen;
+}
+
+.winLoss {
+    background-color: lightblue;
+}
+
+#scoreText {
+    background-color: teal;
+    margin-bottom: 10px;
+
+}
+
+#score {
+    background-color: teal;
+}
