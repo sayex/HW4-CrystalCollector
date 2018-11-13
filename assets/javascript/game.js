@@ -55,13 +55,13 @@ $(document).ready(function () {
     // reset game function
 
     function reset() {
-        randomizer()
         winLossObject.score = 0
+        randomizer()
         screenUpdate()
     }
 
 
-    // play game with on click function
+    // play game listener with click 
 
     $(".gems").on("click", function () {
         $("#winLossStatus").text("")
