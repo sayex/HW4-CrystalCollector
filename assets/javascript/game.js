@@ -18,14 +18,22 @@ $(document).ready(function () {
         score: 0
 
     }
+
+
+    // random arugment fucntion that the randomizer passes its numbers through
+
+    function assignRandom(max, min) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
     // randomly generate the 5 numbers needed to play this game
 
     function randomizer() {
-        randomNumbersObject.NumberToGuess = Math.floor(Math.random() * (120 - 19 + 1) + 19);
-        randomNumbersObject.gem1 = Math.floor(Math.random() * 12 + 1);
-        randomNumbersObject.gem2 = Math.floor(Math.random() * 12 + 1);
-        randomNumbersObject.gem3 = Math.floor(Math.random() * 12 + 1);
-        randomNumbersObject.gem4 = Math.floor(Math.random() * 12 + 1);
+        randomNumbersObject.NumberToGuess = assignRandom(120, 19)
+        randomNumbersObject.gem1 = assignRandom(1, 12)
+        randomNumbersObject.gem2 = assignRandom(1, 12)
+        randomNumbersObject.gem3 = assignRandom(1, 12)
+        randomNumbersObject.gem4 = assignRandom(1, 12)
 
     }
 
@@ -43,11 +51,11 @@ $(document).ready(function () {
     function checkWinLoss() {
         if (winLossObject.score === randomNumbersObject.NumberToGuess) {
             winLossObject.wins++
-            $("#winLossStatus").text("You got it!")
+            $("#winLossStatus").html("You got it!")
             reset()
         } else if (winLossObject.score > randomNumbersObject.NumberToGuess) {
             winLossObject.losses++
-            $("#winLossStatus").text("Try again!")
+            $("#winLossStatus").html("Try again!")
             reset()
 
         }
